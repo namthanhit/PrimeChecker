@@ -27,4 +27,14 @@ public class PrimeCheckerTest {
     public void testNonPrime() {
         assertFalse(PrimeChecker.isPrime(10));
     }
+
+    @Test
+    public void testTwo() {
+        assertTrue(PrimeChecker.isPrime(2)); // kiểm tra trường hợp nhỏ nhất prime
+    }
+
+    @Test
+    public void testDivisibleCase() {
+        assertFalse(PrimeChecker.isPrime(9)); // chia hết cho 3
+    }
 }
